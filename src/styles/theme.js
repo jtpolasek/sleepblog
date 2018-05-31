@@ -1,19 +1,19 @@
 const theme = {
   colors: {
-    base: '#121212', // Black
-    secondary: '#e9e9e9', // Medium Gray
-    tertiary: '#f3f3f3', // Light Gray
-    highlight: '#5b8bf7', // Light Blue
+    base: 'rgba(62, 130, 83, 1)', // Black
+    secondary: 'rgba(202, 210, 197, 1)', // Medium Gray
+    tertiary: 'rgba(160, 172, 173, .2)', // Light Gray
+    highlight: 'rgba(155, 209, 229, 1)', // Light Blue
   },
   sizes: {
     maxWidth: '1200px',
-    maxWidthCentered: '650px',
+    maxWidthCentered: '650px'
   },
   responsive: {
     small: '35em',
     medium: '50em',
-    large: '70em',
-  },
+    large: '70em'
+  }
 }
 
 export default theme

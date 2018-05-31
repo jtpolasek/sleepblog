@@ -5,56 +5,31 @@ import Container from '../components/Container'
 import PageTitle from '../components/PageTitle'
 import SEO from '../components/SEO'
 
-const Index = ({ data }) => {
+const Index = ({data}) => {
   const posts = data.allContentfulPost.edges
 
   return (
     <div>
-      <SEO />
+      <SEO/>
       <Container>
-        <PageTitle small>
-          <a
-            href="https://www.gatsbyjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>,{' '}
-          <a
-            href="https://www.contentful.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Contentful
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://www.netlify.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Netlify
-          </a>{' '}
-          <span>🎉</span>
+        <PageTitle>
+          The Sleep Nomad
         </PageTitle>
         <CardList>
-          {posts.map(({ node: post }) => (
-            <Card
-              key={post.id}
-              slug={post.slug}
-              image={post.heroImage}
-              title={post.title}
-              date={post.publishDate}
-              excerpt={post.body}
-            />
-          ))}
+          {posts.map(({node: post}) => (<Card
+            key={post.id}
+            slug={post.slug}
+            image={post.heroImage}
+            title={post.title}
+            date={post.publishDate}
+            excerpt={post.body}/>))}
         </CardList>
       </Container>
     </div>
   )
 }
 
-export const query = graphql`
+export const query = graphql `
   query indexQuery {
     allContentfulPost(
       limit: 1000
