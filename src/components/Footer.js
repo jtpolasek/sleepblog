@@ -17,7 +17,7 @@ const List = styled.ul `
   align-items: flex-start;
   width: 100%;
   border-top: 1px solid ${props => props.theme.colors.secondary};
-  padding: 1em 0 2em;
+  padding: .5em 0 1em;
   margin: 0 1.5em;
 `
 

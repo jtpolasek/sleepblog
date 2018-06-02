@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const Header = styled.header`
+const Header = styled.header `
   background: ${props => props.theme.colors.base};
   width: 100%;
   padding: 1.5em 0;
 `
-const Nav = styled.nav`
+const Nav = styled.nav `
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
@@ -41,7 +41,7 @@ const Nav = styled.nav`
 `
 
 const activeLinkStyle = {
-  color: 'white',
+  color: 'white'
 }
 
 const Menu = () => {
@@ -51,7 +51,7 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" exact activeStyle={activeLinkStyle}>
-              Home
+              The Sleep Nomad
             </Link>
           </li>
           <li>

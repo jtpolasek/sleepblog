@@ -13,7 +13,7 @@ const Index = ({data}) => {
       <SEO/>
       <Container>
         <PageTitle>
-          The Sleep Nomad
+          On a trail to better sleep...
         </PageTitle>
         <CardList>
           {posts.map(({node: post}) => (<Card
@@ -28,7 +28,6 @@ const Index = ({data}) => {
     </div>
   )
 }
-
 export const query = graphql `
   query indexQuery {
     allContentfulPost(
@@ -43,7 +42,7 @@ export const query = graphql `
           publishDate(formatString: "MMMM DD, YYYY")
           heroImage {
             title
-            sizes(maxWidth: 800) {
+            sizes(maxWidth: 1800) {
               ...GatsbyContentfulSizes_withWebp_noBase64
             }
           }

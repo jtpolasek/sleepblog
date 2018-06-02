@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-const Wrapper = styled.section`
+const Wrapper = styled.section `
   position: relative;
   min-height: 300px;
 `
@@ -35,7 +35,7 @@ const BgImg = styled(Img)`
   }
 `
 
-const Title = styled.h1`
+const Title = styled.h1 `
   font-size: 3em;
   text-transform: capitalize;
   font-weight: 600;
@@ -47,7 +47,7 @@ const Title = styled.h1`
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  // color: rgba(62, 130, 83, 1);
 `
 
 const Hero = props => (
@@ -55,8 +55,7 @@ const Hero = props => (
     <BgImg
       height={props.height}
       sizes={props.image.sizes}
-      backgroundColor={'#eeeeee'}
-    />
+      backgroundColor={'#eeeeee'}/>
     <Title>{props.title}</Title>
   </Wrapper>
 )

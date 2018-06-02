@@ -149,11 +149,6 @@ module.exports = {
       options: {
         color: config.themeColor
       }
-    }, {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
     }
   ]
 }

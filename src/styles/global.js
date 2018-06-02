@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components'
+import {injectGlobal} from 'styled-components'
 
-injectGlobal`
+injectGlobal `
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -81,13 +81,16 @@ injectGlobal`
 
   body {
     background: white;
-    line-height: 1;
-    font-size: 100%;
+    line-height: 1.2;
+    font-size: 110%;
     font-variant-ligatures: none;
     text-rendering: optimizeLegibility;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI
+    Symbol";
+
   }
 
   img {

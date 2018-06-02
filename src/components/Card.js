@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-// import Img from 'gatsby-image'
+import Img from 'gatsby-image'
 
 const Post = styled.li `
   border: 1px solid ${props => props.theme.colors.secondary};
@@ -54,7 +54,7 @@ const Card = props => {
   return (
     <Post>
       <Link to={`/${props.slug}/`}>
-        {/* <Img sizes={props.image.sizes} backgroundColor={'#eeeeee'} /> */}
+        <Img sizes={props.image.sizes} backgroundColor={'#eeeeee'}/>
         <Title>{props.title}</Title>
         <Date>{props.date}</Date>
         <Excerpt
